@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=5.0">
     <title>Web Components demo</title>
     <style>
         h4{
@@ -14,8 +14,8 @@
 </head>
 <body>
     <h1>Web Compoents Basics</h1>
-    <user-card name="Deepak"></user-card>
-    <user-card name="Rohit"></user-card>
+    <user-card name="Deepak"><span< slot="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione maxime, facere amet alias distinctio voluptates optio. Architecto ipsa qui ullam!</span></user-card>
+    <user-card name="Rohit"><span slot="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, reprehenderit?</span></user-card>
     <script src="userCard.js"></script>
 </body>
 </html>

@@ -7,16 +7,19 @@ h3{
     font-family: 'Courier New', Courier, monospace;
 }
 .user-card{
-    height:150px;
-    width:150px;
+    height: fit-content;
+    width: 20vh;
+    min-width:20vmax;
     background-color: purple;
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content:center;
-    align-items:center;
-    margin:5px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
     border-radius: 15px;
+    padding: 1rem;
+    word-break: break-word;
 }
 button{
     background-color: white;
@@ -24,11 +27,15 @@ button{
     border-radius: 35px;
     cursor:pointer;
 }
+slot{
+    color:bisque;
+}
 </style>
 <div class="user-card">
 <h3 id="user-name"></h3>
+<slot name="message"/ >
 <button id='toggle-info'> Hide Info</button>
-</div>
+</div> 
 `
 
 class UserCard extends HTMLElement{
